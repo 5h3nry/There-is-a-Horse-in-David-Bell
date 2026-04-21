@@ -1,10 +1,15 @@
-let username = null;
-let password = null;
+const state = {
+  user: null,
+  isLoading: false,
+}
 
 function logIn() {
-  if (username === "a.stoddard" && password === "AlphaCentauri1") {
-    document.body.innerHTML = "<h1>//WELCOME, A.STODDARD</h1>";
-  } else {
-    return window.alert("Please enter a valid login.");
+  let user = document.getElementById('userInput').value
+  let pass = document.getElementById('passInput').value
+
+    if(user === "a.stoddard" && pass === "AlphaCentauri1") {
+      unlockedStoddard = true;
+    } else {
+    alert('Please enter a valid login.');
   }
-}
+};

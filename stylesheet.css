@@ -199,14 +199,6 @@ nav.site ul li {
 	width: 200px;
 }
 
-img.pip-hero {
-	display: block;
-	float: left;
-	height: auto;
-	margin: 5px 10px 5px 0;
-	width: 120px;
-}
-
 label {
 	clear: left;
 	display: block;
@@ -268,6 +260,7 @@ a.button {
 	display: inline-block;
 	font-family: 'VT323', Courier;
 	font-size: 1em;
+	margin-top: 20px;
 	margin-bottom: 20px;
 	opacity: 0.25;
 	padding: 10px 100px;

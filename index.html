@@ -54,10 +54,10 @@
     <br>
     <br>
     <p>Please enter your login to verify your identity.</p>
-    <form>
-      <label>user >></label><input id="user" type="text" /><br />
-      <label>pass >></label><input id="pass" type="text" /><br />
-      <input type="submit" hidden />
+    <form name="logInForm" id="logIn" autocomplete="off" onsubmit="logIn()">
+      <label>user >></label><input id="userInput" type="text" name="username" /><br />
+      <label>pass >></label><input id="passInput" type="text" name="password" /><br />
+      <input type="submit" value="Log In" />
   </div>
 </div>
 </body>
