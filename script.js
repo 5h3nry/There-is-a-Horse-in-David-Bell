@@ -10,6 +10,13 @@ const routes = {
   "#/scientist2": Scientist2,
 };
 
+//Creating render fuction to display different content.
+function render() {
+  const body = document.body ;
+
+  
+}
+
 // Makes the user able to login to different accounts, ADD MORE USERS HERE.
 function logIn() {
   let user = document.getElementById("userInput").value;
@@ -18,6 +25,9 @@ function logIn() {
   if (user === "a.stoddard" && pass === "AlphaCentauri1") {
     document.getElementById("invalid").innerHTML = "";
     user = "a.stoddard";
+    window.alert("Welcome, A.Stoddard")
+    return `
+    <h1>Welcome, A.Stoddard.</h1>`
   } else {
     event.preventDefault;
     document.getElementById("userInput").classList.add("invalid");
